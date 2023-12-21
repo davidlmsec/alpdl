@@ -15,11 +15,23 @@
   <!-- Header -->
   <header class="container-fluid header">
     <div class="container">
-      <a href="#" class="logo">Amicale Laïque Balmipontaine</a>
-      <nav class="menu">
-        <a href="index.html">Accueil</a>
-        <a href="events.html">Évènements</a>
-        <a href="#contact">Contact</a>
+      <a href="#" class="logo"><img class="img-logo" src="images/logo.png" alt="logo"></a>
+      <!-- Menu burger  -->
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <!-- Navigation -->
+      <nav id="sideNav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+          <li><a class="active" href="index.html">Accueil</a></li>
+          <li><a href="events.html">Évènements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -49,5 +61,6 @@
   </section>
   <!-- End Footer -->
 </body>
+<script src="js/script.js"></script>
 
 </html>
