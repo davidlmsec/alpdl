@@ -9,29 +9,44 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header -->
   <header class="container-fluid header">
     <div class="container">
-      <a href="#" class="logo"><img class="img-logo" src="images/logo.png" alt="logo"></a>
-      <!-- Menu burger  -->
-      <a href="#" id="openBtn">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </a>
       <!-- Navigation -->
-      <nav id="sideNav" class="sidenav">
-        <a id="closeBtn" href="#" class="close">×</a>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a class="active" href="events.html">Évènements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html"><img class="img-logo" src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Menu burger">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="events.html">Évènements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -43,7 +58,7 @@
       <img class="img-banner" src="images/banner2.jpg" alt="Bannière du site">
     </div>
     <div class="inner-banner">
-      <button class="btn btn-custom">Contactez-Nous</button>
+      <!-- <button class="btn btn-custom">Contactez-Nous</button> -->
       <h1>Amicale Laïque Balmipontaine</h1>
     </div>
   </section>
@@ -60,7 +75,7 @@
 
   </section>
   <!-- End Footer -->
+  <button class="btn btn-custom">Contactez-Nous</button>
 </body>
-<script src="js/script.js"></script>
 
 </html>

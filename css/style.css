@@ -14,7 +14,7 @@
  /* Variables */
  :root {
   --main-text-color: #474747;
-  --main-color: #e58e26;
+  --main-color: #e58f26;
   --second-color: #ffa600;
   --font-children: 'Schoolbell', cursive;
  }
@@ -33,7 +33,7 @@ body {
 
 .header {
   background-color: var(--main-color);
-  height: 70px;
+  height: 100px;
   line-height: 70px;
 }
 
@@ -46,68 +46,18 @@ body {
   border-radius: 50%;
  }
 
-   /* #### Menu burger #### */
+ /* ====================== Navigation ====================== */
 
-/* Sidenav menu */
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
+.navbar-collapse {
   z-index: 1;
-  top: 0;
-  left: -250px;
-  background-color: #f6b83bef;
-  padding-top: 60px;
-  transition: left 0.5s ease;
-}
-
-/* Sidenav menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: var(--main-text-color);
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: var(--main-color);
-}
-
-.sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidenav.active {
-  left: 0;
-}
-
-/* Bouton close */
-.sidenav .close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
-
-.burger-icon {
-  float: right;
-}
-
-/* Icône burger */
-.burger-icon span {
-  display: flex;
-  position: relative;
-  top: 30px;
-  width: 35px;
-  height: 5px;
-  background-color: rgb(252, 245, 229);
+  background-color: #e58e26;
   border-radius: 5px;
-  margin: 4px;
 }
+
+.nav-item {
+  padding-left: 15px;
+}
+
 
 
  /* ====================== Banner ====================== */
@@ -144,6 +94,7 @@ body {
   position: relative;
   float: left;
   left: 30px;
+  top: 50px;
   font-family: var(--font-children);
   color: white;
   text-shadow: 2px 2px 20px #000;
@@ -151,12 +102,13 @@ body {
  }
 
  /* Bouton */
- .inner-banner .btn-custom {
-  position: relative;
-  float: right;
-  top: -30px;
+ .btn-custom {
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  bottom: 30px;
   background-color: var(--main-color);
-  margin-right: 20px;
+  color: var(--bs-nav-link-color);
  }
 
  .inner-banner .btn-custom:hover {
