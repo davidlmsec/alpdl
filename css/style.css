@@ -33,7 +33,7 @@ body {
 
 .header {
   background-color: var(--main-color);
-  height: 100px;
+  height: 120px;
   line-height: 70px;
 }
 
@@ -92,13 +92,11 @@ body {
  /* Titre */
  .inner-banner h1 {
   position: relative;
-  float: left;
-  left: 30px;
-  top: 50px;
+  top: 20%;
   font-family: var(--font-children);
   color: white;
   text-shadow: 2px 2px 20px #000;
-  font-size: 150%;
+  font-size: 6vw;
  }
 
  /* Bouton */
@@ -121,7 +119,10 @@ body {
 
  .content {
   position: relative;
+  text-align: justify;
   top: 20px;
  }
 
- .content 
+ .content article {
+  padding: 15px;
+ }
