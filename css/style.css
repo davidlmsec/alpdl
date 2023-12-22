@@ -69,9 +69,9 @@ body {
 }
 
 .ban {
+  position: relative;
   width: 100%;
   max-width: 100%;
-  position: relative;
 }
 
  .img-banner {
@@ -94,9 +94,9 @@ body {
   position: relative;
   top: 20%;
   font-family: var(--font-children);
+  font-size: 6vw;
   color: white;
   text-shadow: 2px 2px 20px #000;
-  font-size: 6vw;
  }
 
  /* Bouton */
@@ -107,6 +107,7 @@ body {
   bottom: 30px;
   background-color: var(--main-color);
   color: var(--bs-nav-link-color);
+  border: 1px solid var(--main-text-color);
  }
 
  .inner-banner .btn-custom:hover {
@@ -117,12 +118,30 @@ body {
 
  /* ====================== Content ====================== */
 
- .content {
+ /* #### Index #### */
+ .content-index {
   position: relative;
   text-align: justify;
-  top: 20px;
+  top: 50px;
+  padding: 20px;
  }
 
- .content article {
+ .content-index article {
   padding: 15px;
+  margin-bottom: 30px;
  }
+
+
+  /* ====================== Footer ====================== */
+
+  footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+  }
+
+  .div-footer {
+    margin: 20px;
+    font-size: small;
+  }
