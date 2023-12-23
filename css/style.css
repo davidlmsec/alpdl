@@ -20,7 +20,7 @@
  :root {
   --main-text-color: #474747;
   --main-color: #e58f26;
-  --second-color: #ffa600;
+  --second-color: #f0c504;
   --font-children: 'Schoolbell', cursive;
  }
 
@@ -34,6 +34,7 @@ body {
   padding: 0;
  }
 
+
  /* ====================== Header ====================== */
 
 .header {
@@ -43,18 +44,18 @@ body {
 }
 
  .img-logo {
-  position: relative;
   z-index: 1;
   width: 100px;
   border: 2px double var(--second-color);
   border-radius: 50%;
  }
 
+
  /* ====================== Navigation ====================== */
 
 .navbar-collapse {
   z-index: 1;
-  background-color: #e58e26;
+  background-color: var(--main-color);
   border-radius: 5px;
 }
 
@@ -63,24 +64,13 @@ body {
 }
 
 
-
  /* ====================== Banner ====================== */
 
 .banner {
   position: relative;
-  /* width: 100%;
-  max-width: 100%; */
-}
-
-.ban {
-  position: relative;
-  /* width: 100%;
-  max-width: 100%; */
 }
 
  .img-banner {
-  position: relative;
-  top: 15%;
   width: 100%;
   max-width: 100%;
   max-height: 500px;
@@ -89,19 +79,17 @@ body {
 
  .inner-banner {
   position: absolute;
-  top: 10%;
+  top: 70%;
   width: 100%;
   text-align: center;
  }
 
  /* Titre */
  .inner-banner h1 {
-  position: relative;
-  top: 20%;
   font-family: var(--font-children);
   font-size: 6vw;
   color: white;
-  text-shadow: 2px 2px 20px #000;
+  text-shadow: 2px 2px 2px var(--main-text-color);
  }
 
  .inner-banner .btn-custom:hover {
@@ -111,7 +99,6 @@ body {
 
  /* ====================== Content ====================== */
 .content h2 {
-  position: relative;
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
@@ -122,7 +109,6 @@ body {
 
  /* #################### Index #################### */
  .content-index {
-  position: relative;
   text-align: justify;
   padding: 20px;
  }
@@ -247,7 +233,6 @@ body {
   /* ====================== Footer ====================== */
 
   footer{
-    position: relative;
     padding: 50px 0;
     display: flex;
     justify-content: center;
