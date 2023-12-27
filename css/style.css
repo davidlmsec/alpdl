@@ -212,7 +212,7 @@ body {
     display: flex;
     align-items: center;
     width: 40%;
-    height: 25vh;
+    height: 50vh;
   }
   .google-map-icon {
     display: none;
